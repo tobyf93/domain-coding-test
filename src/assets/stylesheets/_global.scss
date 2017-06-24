@@ -1,0 +1,30 @@
+@import '_colours.scss';
+
+:global {
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  #builder-wrapper {
+    background-color: $white;
+  }
+
+  #preview {
+    background-color: $zircon;
+  }
+
+  @media (min-width: 425px) {
+    body {
+      display: flex;
+    }
+
+    #builder-wrapper {
+      flex: 1;
+    }
+
+    #preview {
+      flex: 1;
+    }
+  }
+}
