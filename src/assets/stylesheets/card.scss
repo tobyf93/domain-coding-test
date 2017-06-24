@@ -1,9 +1,8 @@
 @import '_colours.scss';
 
 .root {
-  border: 1px solid $black;
+  border-bottom: 1px solid $black;
   width: 75%;
-  height: 200px;
 }
 
 .header {
@@ -28,4 +27,9 @@
   margin: 5px;
   border: 1px solid $grey-chateau;
   background-color: $white;
+}
+
+.body {
+  background-color: $white;
+  height: 200px;
 }

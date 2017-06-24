@@ -8,8 +8,10 @@ function Card() {
         <div className={styles.name}>
           <div>Toby Flemming</div>
         </div>
-        <div className={styles.avatar}>
-        </div>
+        <div className={styles.avatar} />
+      </div>
+      <div className={styles.body}>
+
       </div>
     </div>
   );

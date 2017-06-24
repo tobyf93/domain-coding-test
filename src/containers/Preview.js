@@ -12,7 +12,4 @@ function Preview() {
   );
 }
 
-const mapDispatchToProps = dispatch =>
-  bindActionCreators({}, dispatch);
-
-export default connect(state => state, mapDispatchToProps)(Preview);
+export default connect(state => state)(Preview);
