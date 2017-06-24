@@ -1,5 +1,31 @@
+@import '_colours.scss';
+
 .root {
-  border: 1px solid black;
+  border: 1px solid $black;
   width: 75%;
   height: 200px;
+}
+
+.header {
+  display: flex;
+  background-color: $madison;
+  height: 100px;
+}
+
+.name {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  margin: 10px;
+  color: $white;
+  font-size: 2em;
+}
+
+.avatar {
+  display: flex;
+  height: 125px;
+  width: 100px;
+  margin: 5px;
+  border: 1px solid $grey-chateau;
+  background-color: $white;
 }

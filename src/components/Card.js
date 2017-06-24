@@ -4,7 +4,13 @@ import styles from '../assets/stylesheets/card.scss';
 function Card() {
   return (
     <div className={styles.root}>
-      CARD
+      <div className={styles.header}>
+        <div className={styles.name}>
+          <div>Toby Flemming</div>
+        </div>
+        <div className={styles.avatar}>
+        </div>
+      </div>
     </div>
   );
 }
