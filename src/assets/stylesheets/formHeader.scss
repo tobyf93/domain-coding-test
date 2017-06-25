@@ -1,0 +1,10 @@
+@import '_colours.scss';
+
+.root {
+  flex: 1 1 100%;
+  color: $zircon;
+  border-bottom: 1px solid $zircon;
+  margin: 30px 0;
+  text-transform: uppercase;
+  font-size: 0.75em
+}

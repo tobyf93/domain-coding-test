@@ -12,7 +12,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Builder />
   </Provider>,
-  document.getElementById('builder'),
+  document.getElementById('form'),
 );
 
 ReactDOM.render(
