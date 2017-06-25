@@ -4,10 +4,10 @@ import { bindActionCreators } from 'redux';
 import Card from '../components/Card';
 import styles from '../assets/stylesheets/preview.scss';
 
-function Preview() {
+function Preview({ data }) {
   return (
     <div className={styles.root}>
-      <Card />
+      <Card data={data} />
     </div>
   );
 }

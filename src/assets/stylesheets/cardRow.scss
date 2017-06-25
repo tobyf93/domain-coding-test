@@ -1,0 +1,11 @@
+@import '_colours.scss';
+
+.root {
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid $grey-chateau;
+}
+
+.label {
+  width: 75px;
+}
