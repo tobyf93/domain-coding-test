@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Input from './Input';
+import Button from '../Button';
 import styles from '../../assets/stylesheets/form.scss';
 
 function Form({ updateField }) {
@@ -51,6 +52,14 @@ function Form({ updateField }) {
       <Input
         label="Country"
         onChange={e => onChange('country', e)}
+      />
+      <Button
+        label="Upload Avatar"
+        backgroundColour="bermudaGrey"
+      />
+      <Button
+        label="Create hCard"
+        backgroundColour="summerSky"
       />
     </div>
   );

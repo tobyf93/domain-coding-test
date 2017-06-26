@@ -1,0 +1,20 @@
+@import '_colours.scss';
+
+.root {
+  display: flex;
+  flex: 0 1 45%;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 5px;
+  background-color: red;
+  color: $white;
+}
+
+.bermuda-grey {
+  background-color: $bermuda-grey;
+}
+
+.summer-sky {
+  background-color: $summer-sky;
+}
