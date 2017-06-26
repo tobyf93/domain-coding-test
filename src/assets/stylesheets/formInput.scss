@@ -3,18 +3,19 @@
 .root {
   flex: 0 1 45%;
   margin-bottom: 15px;
-
-  input {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid $zircon;
-  }
 }
 
 .label {
   color: $madison;
   text-transform: uppercase;
   font-size: 0.75em;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid $zircon;
 }

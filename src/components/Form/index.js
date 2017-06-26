@@ -5,7 +5,7 @@ import styles from '../../assets/stylesheets/form.scss';
 
 function Form({ updateField }) {
   const onChange = (field, e) => {
-    updateField(field, e.target.value);
+    updateField(field, e.target.value.trim());
   };
 
   return (

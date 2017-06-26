@@ -3,26 +3,28 @@ import styles from '../../assets/stylesheets/card.scss';
 import Row from './Row';
 
 function Card({ data }) {
-  const fullName = () => {
-    const givenName = data.get('givenName') || '';
-    const surname = data.get('surname') || '';
+  const fullName = () => [
+    data.get('givenName'),
+    data.get('surname'),
+  ]
+    .filter(item => item)
+    .join(' ');
 
-    return `${givenName} ${surname}`;
-  };
+  const getAddressLine1 = () => [
+    data.get('houseNumber'),
+    data.get('street'),
+  ]
+    .filter(item => item)
+    .join(' ');
 
-  const addressLine1 = () => {
-    const houseNumber = data.get('houseNumber') || '';
-    const street = data.get('street') || '';
+  const getAddressLine2 = () => [
+    data.get('suburb'),
+    data.get('state'),
+  ]
+    .filter(item => item)
+    .join(', ');
 
-    return `${houseNumber} ${street}`;
-  };
-
-  const addressLine2 = () => {
-    const suburb = data.get('suburb') || '';
-    const state = data.get('state') || '';
-
-    return `${suburb}, ${state}`;
-  };
+  const addressLine2 = getAddressLine2();
 
   return (
     <div className={styles.root}>
@@ -37,9 +39,12 @@ function Card({ data }) {
         <Row label="Phone" value={data.get('phone')} />
         <Row
           label="Address"
-          value={addressLine1()}
+          value={getAddressLine1()}
         />
-        <Row value={addressLine2()} />
+        {
+          addressLine2 ?
+            <Row value={getAddressLine2()} /> : null
+        }
         <div className={styles.doubleRow}>
           <Row label="Postcode" value={data.get('postcode')} />
           <Row label="Country" value={data.get('country')} />

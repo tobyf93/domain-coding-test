@@ -12,35 +12,33 @@
     font-size: 12pt;
   }
 
+  body {
+    display: flex;
+  }
+
   #builder {
     background-color: $white;
+    flex: 1;
 
     h1 {
       color: $madison;
       margin: 0;
     }
+  }
 
-    #form-wrapper {
-      padding: 50px;
-    }
+  #form-wrapper {
+    padding: 50px;
   }
 
   #preview {
+    flex: 1;
     padding: 50px 0;
     background-color: $zircon;
   }
 
-  @media (min-width: $tablet) {
+  @media (max-width: $laptop) {
     body {
-      display: flex;
-    }
-
-    #builder {
-      flex: 1;
-    }
-
-    #preview {
-      flex: 1;
+      display: block;
     }
   }
 }

@@ -2,10 +2,19 @@
 
 .root {
   display: flex;
-  flex: 1;
-  border-bottom: 1px solid $grey-chateau;
+  flex: 1 0;
+  border-bottom: 1px solid $zircon;
+  margin-bottom: 15px;
 }
 
 .label {
-  width: 75px;
+  min-width: 100px;
+  color: $madison;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.value {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
